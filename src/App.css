@@ -1,38 +1,139 @@
-.App {
-  text-align: center;
+html{
+  height: 100%;
+  margin: auto;
+  background-image: url(./svgh.png);
+background-repeat: no-repeat;
+background-size: cover;
+  
+}
+body{
+  
+ 
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+
+.box{
+  
+  margin: 1rem auto;
+  border: 2px solid #111;
+  
+ 
+  height: 45rem;
+  width: 35rem;
+  background-color: black;
+  
+  margin-top: 5%;
+  border-radius: 3rem;
+}
+.box {
+  background:rgba(19, 20, 20, 0.753);
+
+    
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  .box {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(1.8px);
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.Title{
+  text-align: center;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 100%;
+  color: aliceblue;
+  font-size: 3rem;
+  font-family: cursive;
+  font-weight: 600;
+  height: 10%;
+  padding: 1rem;
+
+
+
+
+  
+}
+.row{
+  padding: 1rem;
+  background-color: black;
+  border-radius: 2rem;
+  height: 3%;
+  margin: 0.8rem 2rem ;
+  color: white;
+}
+.btnrow{
+  padding: 1rem;
+  
+  margin: 0.5rem 1.5rem;
+  height: 9%;
+  display: flex;
+}
+.btn{
+  opacity: 100% !important;
+  padding: 0 1.8rem;
+  margin: 0% 5%;
+  border-radius: 50%;
+  background: tomato !important;
+  
+  color: white;
+  
+}
+.grey{
+  background: grey;
+  opacity: 100% !important;
+  padding: 0 1.5rem;
+  margin: 0% 5%;
+  border-radius: 50%;
+ 
+  
+  color: white;
+}
+.btnq{
+ 
+  padding: 0 2rem;
+  margin: 0% 4%;
+  border-radius: 50%;
+  background: rgb(159, 241, 7) !important;
+ width:5rem;
+  color: white;
+  font-weight: 800;
+  font-size: 1.5rem;
+  
+}
+.btnz{
+  opacity: 100% !important;
+  padding: 0 1.8rem;
+  margin: 0% 5%;
+  border-radius:2rem;
+  background: tomato !important;
+  width: 11.5rem;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.backspc{
+  width: 2rem;
+  background: red;
+  height: 2rem;
+  position: absolute;
+  right: 0;
+  margin: 0rem 3rem;
+ margin-top: -0.8%;
+  border-radius: 2rem;
+  color:white;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media(max-width:768px){
+  
+html{
+  font-size: 55%;
+  margin-top: 10vh;
+}
+.backspc{
+  padding: 0rem;
+  font-size: 100%;
+}
 }
